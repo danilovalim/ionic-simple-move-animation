@@ -6,9 +6,18 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content #content (ionScroll)="getScrollPosition($event)" padding>
+  <div style="position: absolute">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra tincidunt dolor, a fringilla diam accumsan id. Maecenas fermentum diam ac dui vehicula, eget aliquam erat aliquam. Nulla a ultricies enim, sit amet sodales mauris. Curabitur pretium lacinia risus eget congue. Suspendisse quis est vel odio bibendum pellentesque id vel est. Fusce molestie dui lorem, vel ullamcorper enim sodales ac. Mauris finibus hendrerit enim, vel cursus quam euismod vitae. Quisque at diam vel lacus volutpat molestie ut dictum ex. Vestibulum rutrum nisl in maximus elementum. Nunc congue orci ut diam sodales cursus. Nunc rhoncus, tellus vitae pulvinar imperdiet, urna lorem accumsan arcu, in congue sapien sapien at dolor. Integer non aliquam quam. Pellentesque et ipsum felis. Phasellus augue mauris, facilisis in tempor at, eleifend in justo. Sed pretium, justo sit amet rutrum finibus, nunc est viverra risus, vel tincidunt tellus tellus vel dolor. Vivamus vehicula lorem dolor, sit amet congue tellus varius ut.
+
+      Proin interdum suscipit vehicula. Nunc lacus risus, tincidunt ut ipsum ut, finibus dapibus lacus. Suspendisse ultricies interdum faucibus. Donec sollicitudin enim et luctus tempor. Aenean varius pharetra congue. Aenean et bibendum felis. Quisque ac libero eu nunc hendrerit dapibus a nec massa.
+      
+      Integer gravida ante libero, at hendrerit justo elementum sed. Donec velit augue, scelerisque id laoreet vitae, mollis ac sem. Pellentesque convallis condimentum mauris, vel dictum velit dictum eget. Phasellus sollicitudin tellus non malesuada tempus. Duis cursus massa eget felis rhoncus, pretium finibus enim vestibulum. Aenean efficitur justo erat, sed consectetur dui hendrerit id. Ut sagittis feugiat nunc, commodo rhoncus felis elementum at. Cras ut elit fermentum, consequat est non, tempor nulla. Vestibulum metus tellus, ornare ut mollis at, elementum placerat quam.
+      
+      Donec laoreet turpis ut lectus porttitor pulvinar. Praesent velit ipsum, congue eu enim ac, interdum auctor mi. Vestibulum dictum dictum accumsan. Nunc viverra lorem turpis, ut rhoncus augue tincidunt ac. Integer consectetur tortor magna, id facilisis purus condimentum in. Mauris sit amet commodo leo, eget fringilla justo. Ut semper, tortor quis aliquet interdum, dolor dui luctus velit, vel mattis lorem dolor vitae massa. Vestibulum lectus tortor, cursus quis imperdiet ut, venenatis vel risus. Maecenas hendrerit faucibus est eu consequat. Pellentesque pretium massa tortor. Sed et ipsum rhoncus, volutpat enim ut, interdum leo. Vestibulum laoreet nibh metus, ut accumsan velit egestas sit amet. Etiam aliquet tortor eu leo laoreet commodo. Aenean ac augue tincidunt augue pulvinar consectetur. Duis volutpat at odio sed volutpat.
+      
+      Nunc neque augue, scelerisque sit amet tellus eget, placerat pharetra felis. Proin varius elementum gravida. Donec nec justo sed risus bibendum finibus. Cras fringilla justo at massa laoreet, a semper nibh posuere. Donec accumsan mauris ac nibh iaculis sodales. Quisque tincidunt aliquet metus malesuada ultrices. Nam porttitor erat velit, eget gravida quam rhoncus sed. Duis non velit lectus. Suspendisse vitae purus suscipit, commodo orci convallis, hendrerit leo. Pellentesque id leo pharetra, imperdiet orci non, pharetra felis. Nam vitae felis maximus, porta erat eu, tempus quam. Sed faucibus dapibus rutrum. Cras fermentum, leo vitae ultricies lobortis, neque sapien sodales purus, id porta libero justo id erat.
+
+      <img [ngClass]="imgClass" src="../../assets/imgs/van-to-right.png" />
+  </div>
 </ion-content>
